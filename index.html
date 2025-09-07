@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="mk">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AUDI.css">
+    <title>AUDI</title>
+    <link rel="website icon" type="png" href="">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+<header class="dd">
+
+    
+  <img class="LOGO" src="data:image/png;base64,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" alt="logo">
+
+  
+          <!-- From Uiverse.io by andrew-demchenk0 --> 
+<label class="switch">
+  <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+  <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+  <input type="checkbox" class="input">
+  <span class="slider"></span>
+</label>
+
+
+
+</header>
+       
+<body>
+  <div class="hero">
+
+  
+    
+
+     <section class="container">
+    <video class="vid" autoplay muted loop playsinline>
+       <source src="Audi-vid.mp4" type="video/mp4" />
+       Your browser does not support the video tag.
+   </video>
+        </section>
+
+
+        <label >
+        <input type="checkbox"> 
+        <div class="tog">
+           <span class="top-line common"></span>
+           <span class="middle-line common"></span>
+           <span class="bottom-line common"></span>
+        </div>
+
+                <div class="slide">
+                       <h1>MENU</h1>
+                       <ul>   
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-building"></i>Company</a></i></li>
+                        <li><a href="#"><i class="fa-solid fa-car"></i>Models</a></li>
+                        <li><a href="#"><i class="fa-solid fa-lightbulb"></i>Innovation</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user-tie"></i>Careers</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bolt"></i>Audi sport</a></li>
+                       <li><a href="#"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+
+
+                       </ul>
+                </div>
+        </label>
+
+
+      <!-- containerA -->
+            <P class="pr">Buy your first Audi</P>
+
+          <section class="containerA">
+        <div class="container1" alt="">
+        <img src="https://uploads.audi-mediacenter.com/system/production/media/125875/images/6578bd1dc3f6bb749723ab9c4e1a2f9868e561e9/A243764_web_480.jpg?1722600323" alt="" srcset=""loading="lazy">
+                <div class="tx">                
+                   <h1>Audi RS3</h1>
+                   <p>Price: $6,200</p>
+
+                    </div>
+                <button class="btn1">other models</button>
+                <button class="btn2">Buy</button>
+        </div>
+
+        <div class="container1">
+                <img src="https://uploads.audi-mediacenter.com/system/production/media/123767/images/990524db3390f26da53a99d6c26115137b75a1e1/A241656_web_480.jpg?1710334435" alt=""loading="lazy">
+                    <div class="tx">                
+                   <h1>Audi Q2</h1>
+                   <p>Price: 7,100</p>
+
+                    </div>
+                <button class="btn1">other models</button>
+                <button class="btn2">Buy</button>
+        </div>
+
+        <div class="container1">
+                <img src="https://uploads.audi-mediacenter.com/system/production/media/127901/images/400a0664eb221416cfc499cabfed1daf26f3a8d5/A250797_web_640.jpg?1748436339"loading="lazy">
+    
+                    <div class="tx">                
+                   <h1>Audi Q3</h1>
+                   <p>Price: $86,200</p>
+
+                    </div>
+                <button class="btn1">other models</button>
+                <button class="btn2">Buy</button>
+        </section><br><br>
+
+
+
+      <!-- containerB -->
+
+          <section class="containerB">
+        <div class="container1" alt="">
+        <img src="https://uploads.audi-mediacenter.com/system/production/media/127740/images/744f57d7c7b7e268046e646f3e03b44f829f3c43/A250636_web_640.jpeg?1749563268" alt="" srcset=""loading="lazy">
+                <div class="tx">                
+                   <h1>Audi Q6</h1>
+                   <p>Price: $6,200</p>
+
+                    </div>
+<!-- From Uiverse.io by barisdogansutcu --> 
+<button class="btn1">other models</button>                               
+<button class="btn2">Buy</button>
+
+        </div>
+        <div class="container1">
+                <img class="rs6" src="https://uploads.audi-mediacenter.com/system/production/media/125389/images/defc9f90eb9ece8362ff30962ffaf362046fd86d/A243278_web_640.jpg?1720443113" alt=""loading="lazy">
+                    <div class="tx">                
+                   <h1>Audi RS6 </h1>
+                   <p>Price:$130,700</p>
+
+                    </div>
+                <button class="btn1">other models</button>
+                <button class="btn2">Buy</button>
+
+        </div>
+        <div class="container1">
+                <img src="https://uploads.audi-mediacenter.com/system/production/media/114002/images/adae937c0bae198af35be9c8d735aa704c73de99/A226696_web_960.jpeg?1731490611"loading="lazy">
+    
+                    <div class="tx">                
+                   <h1>Audi A4</h1>
+                   <p>Price: $86,200</p>
+
+                    </div>
+                <button class="btn1">other models</button>
+                <button class="btn2">Buy</button>
+        </section><br><br>
+
+
+
+
+ 
+     <section>
+      <div class="container3">
+         <img class="im1" src="https://media.audi.com/is/image/audi/country/fr/assets/fr/gamme/q8/rs-q8-performance/1920x1080_RS_Q8_p_driving_15112024.jpg?width=1440" >
+         <div class="tx2">
+         <h1>RSQ8-e-tron</h1>
+         <P>This car combines powerful performance, durability and family size</P>
+          </div>
+      </div>
+     </section>
+     <br>
+
+     <h1 class="title1">Quattro</h1><BR>
+
+     <div class="quattro">
+
+  <div class="quattroA">  
+     
+    <div class="ts2">
+      <img class="quattro1" src="https://media.audi.com/is/image/audi/country/fr/assets/fr/homepage/2025/mars/24_03/1920x1920_Q6.jpg?preferwebp=true&width=915" alt="">
+      <h3 class="h3">Audi Q6 Sportback e-tron</h3>
+      <button class="bt1">Other Models</button>
+    </div>
+
+    <div class="ts2">
+      <img class="quattro2" src="https://media.audi.com/is/image/audi/country/fr/assets/fr/homepage/2025/mars/24_03/1920x1920_A6.jpg?preferwebp=true&width=915" alt="">
+        <h3 class="h3">Audi A4 Avant e-tron SUV</h3>
+        <button class="bt1">Other Models</button>
+    </div>
+  </div>
+
+     </div>
+
+
+<div class="quattroB">
+      <div class="ts2">
+      <img class="quattro3" src="https://media.audi.com/is/image/audi/country/fr/assets/fr/homepage/2025/mars/24_03/1920x1920_Q4.jpg?preferwebp=true&width=915" alt="">
+        <h3 class="h3">Audi Q4 e-tron finition S line</h3>
+        <button class="bt1">Other Models</button>
+    </div>
+
+    <div class="ts2">
+      <img class="quattro4" src="https://media.audi.com/is/image/audi/nemo/fr/Gamme/GammeArticles/Voiture7placesoccasion/2024_08/1920x1920_SQ7_Driving_25072024.jpg?width=660&auto=webp" alt="">
+        <h3 class="h3"> New Audi Q3 SUV  e-tron</h3>
+        <button class="bt1" href="#bt">Other Models</button>  
+    </div>
+     </div>
+
+     <div class="quattroC">
+
+      <div class="ts2">
+      <img class="quattro5" src="https://media.audi.com/is/image/audi/country/fr/assets/fr/homepage/2025/mai/13_05/1920x2664_Q6etron_140525.jpg?preferwebp=true&width=915">
+        <h3 class="h2">Audi Q6 e-tron</h3>
+        <button class="bt2">Discover</button>
+      </div>
+
+
+      <div class="ts2">
+      <img class="quattro6" src="https://media.audi.com/is/image/audi/country/fr/assets/fr/homepage/2025/mai/13_05/1920x2664_Q4etron_140525.jpg?preferwebp=true&width=915" >
+        <h3 class="h2">Audi Q4 e-tron</h3>
+        <button class="bt2">Discover</button>
+      </div>
+
+
+     </div>
+
+
+     
+                
+          <section >
+                <div class="container2">
+                        <img class="im5" src="https://media.audi.com/is/image/audi/country/fr/assets/fr/gamme/q3/q3/1920x1080_Q3_header_11062025.jpg?width=1440" loading="lazy">
+                                <img class="im6"src="https://media.audi.com/is/image/audi/country/fr/assets/fr/gamme/q3/q3/1920x1080_Q3_Side_11062025.jpg" alt="" srcset=""loading="lazy">
+
+                       <div class="text3">
+                        <p class="pr10">New Audi Q3 </p>
+           <p class="pr11">The new Audi Q3 is a compact SUV that combines sporty design with advanced technology and spaciousness, making it perfect for both city driving and outdoor adventures. Its powerful engine options and quattro. </p>
+                        </div>
+                      <button class="discover2" href="#bt">Discover</button>
+
+                </div>
+          </section>
+
+    <section>
+
+      <div class="container3">
+        <div class="Q3">
+          <img src="https://media.audi.com/is/image/audi/country/fr/assets/fr/gamme/q3/q3/1920x2664_Q3_calandre_07102024.jpg">
+          <img src="https://media.audi.com/is/image/audi/country/fr/assets/fr/gamme/q3/q3/1920x2664_Q3_OLED_11062025.jpg">
+        </div>
+            <button class="bt3">Discover</button>
+      </div>
+
+
+
+            <div class="container4">
+              <div class="Q3suv">
+        <img class="on-pc"src="https://uploads.audi-mediacenter.com/system/production/media/128483/images/8456bd6fa2fcb4b718ff3dcb20fec3d1fbd81eb6/A251347_web_640.jpg?1756468660">
+        <img class="on-mobile" src="AUDI img/Audi Q3sport.jpg" alt="">
+        <div class="tx4">
+          <h1 class="Q3-title">Audi Q3 SUV</h1>
+          <p>The Audi Q3 is a compact luxury SUV that offers a perfect blend of style, performance, and practicality. With its sleek design, advanced technology, and spacious interior, the Q3 is designed to elevate your driving experience. Whether you're navigating city streets or embarking on weekend adventures, the Audi Q3 delivers a dynamic and comfortable ride.</p>
+              <br><button class="bt4">Learn more</button>
+
+         </div>
+         </div>
+         </div>
+    </section>
+
+    
+
+          <div class="carousel1">
+  <p>Modals</p><br>
+  <div class="carousel-container1">
+    <button class="carousel-button prev1"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="carousel-track1">
+      <img src="AUDI img/Q3.jpg" alt="">
+      <img src="AUDI img/Audi Q3sport.jpg" alt="">
+            <img src="AUDI img/Audi Q3 hybrid-Sport.jpg" alt="">
+
+    </div>
+    <button class="carousel-button next1"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="carousel-dots1"></div>
+</div>
+
+
+
+
+
+          <section >
+                <div class="container5">
+                        <img class="im7" src="https://uploads.audi-mediacenter.com/system/production/media/124803/images/7bd3f89235d15a2858c59cca925cd5fc7b0d4994/A242692_web_640.jpg?1719298653" loading="lazy">
+                                <img class="im8"src="https://uploads.audi-mediacenter.com/system/production/media/124809/images/eb0af9a2644e0f688efc77bcae62e81affa765ed/A242698_web_640.jpg?1718025364" alt="" srcset=""loading="lazy">
+
+                       <div class="text4">
+                        <p class="pr12">New Audi RS Q8 SUV performance </p>
+                       <p class="pr13">
+The RS Q8 performance1 is the new top model within the Audi SUV family and emphasizes the sporty positioning of the Q8 in all respects.</p>
+                        </div>
+                      <button class="discover3" href="#bt">Discover</button>
+
+                </div>
+          </section>
+
+
+          <div class="carousel1">
+  <p>Modals</p><br>
+  <div class="carousel-container1">
+    <button class="carousel-button prev1"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="carousel-track1">
+      <img src="AUDI img/RSQ8 R.jpg" alt="">
+      <img src="AUDI img/RSQ8 G.jpg" alt="">
+      <img src="AUDI img/RSQ3 GN.jpg" alt="">
+    </div>
+    <button class="carousel-button next1"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="carousel-dots1"></div>
+</div>
+
+
+
+          <section >
+                <div class="container6">
+                        <img class="im9" src="https://uploads.audi-mediacenter.com/system/production/media/113628/images/83ad4e4ce68214e1c9b2f83e331185222c3841fd/A226330_web_640.jpeg?1698519083" loading="lazy">
+                                <img class="im10"src="https://uploads.audi-mediacenter.com/system/production/media/113649/images/3db73e8d921992795b3d4633cd55094264e07afd/A226351_web_640.jpeg?1698519151" alt="" srcset=""loading="lazy">
+
+                       <div class="text5">
+                        <p class="pr14">Audi RS 6 Avant performance</p>
+                       <p class="pr15">Audi RS 6 Avant 4.0 TFSI quattro performance: Combined fuel consumption in l/100 km: 12.7–12.2; combined CO2 emissions in g/km: 289–277.</p>
+                        </div>
+                      <button class="discover4" href="#bt">Discover</button>
+
+                </div>
+          </section>
+
+          
+      <div class="container7">
+        <p class="pr16">Audi RS 6 Avant performance</p>
+        <div class="RS6">
+          <img src="AUDI img/RS6-cromi1.jpg">
+          <img src="AUDI img/RS6-cromi2.jpg">
+        </div>
+        <p class="pr17">
+              The Audi RS6 is a high-performance luxury wagon that blends everyday usability with exhilarating speed, featuring a twin-turbo V8 engine with 600 horsepower, standard quattro all-wheel drive, and a wide, aggressive stance with unique RS-specific exterior styling. It offers impressive acceleration from 0 to 100 km/h (0-60 mph) in as little as 3.3 seconds, comfortable and responsive driving dynamics, and a spacious, practical interior suitable for family use. The RS6 also includes advanced driver-assistance features and offers extensive customization options to enhance its sporty appearance and luxury appeal. 
+            </p>
+            <button class="discover5">Get the offer</button>
+            
+      </div>
+
+          <div class="carousel1">
+  <p>Modals</p><br>
+  <div class="carousel-container1">
+    <button class="carousel-button prev1"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="carousel-track1">
+      <img src="AUDI img/RS6-cromi1.jpg" alt="">
+      <img src="AUDI img/RS6-cromi2.jpg" alt="">
+      <img src="AUDI img/RS6-Black.jpg" alt="">
+    </div>
+    <button class="carousel-button next1"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="carousel-dots1"></div>
+</div>
+
+
+
+
+
+          <section >
+                <div class="container8">
+                        <img class="im9" src="https://uploads.audi-mediacenter.com/system/production/media/125924/images/c9b6b349e22201a030eb34cba0735e6e835d341e/A243813_web_640.jpg?1722601057" loading="lazy">
+                                <img class="im10"src="https://uploads.audi-mediacenter.com/system/production/media/125928/images/e6d78938cfe0407b27ecf82c91c4a5f3e81385e1/A243817_web_640.jpg?1722601103" alt="" srcset=""loading="lazy">
+
+                       <div class="text5">
+                        <p class="pr18">Audi RS 3 Sportback</p>
+                       <p class="pr19">Audi RS 3 Sportback: Combined fuel consumption in l/100 km: 9.5–9.3 (24.8– 25.3 US mpg); combined CO2 emissions in g/km: 217–211 (349.2–339.6 g/mi); CO2 class: G</p>
+                        </div>
+                      <button class="discover6" href="#bt">Discover</button>
+
+                </div>
+          </section>
+
+          
+      <div class="container9">
+        <p class="pr20">Audi RS 3 Sedan</p>
+        <div class="RS3">
+          <img src="AUDI img/RS3-Red.jpg">
+          <img src="AUDI img/RS3-Gry.jpg">
+        </div>
+        <p class="pr21">
+       The Audi RS 3 offers driving dynamics at the highest level. With the uprade, the compact top model is even sportier: the powerfully designed front, wheels in motorsport-design, and RS bucket seats visually enhance the dynamics, acoustically emphasized by the distinctive throaty roar of the five-cylinder engine with its signature firing sequence. The 2.5 TFSI, combined with the optimized chassis setup and new tires, propels the RS 3 even more spirited around corners.
+            </p>
+            <button class="discover5">Get the offer</button>
+            
+      </div>
+
+      
+          <div class="carousel1">
+  <p>Modals</p><br>
+  <div class="carousel-container1">
+    <button class="carousel-button prev1"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="carousel-track1">
+      <img src="AUDI img/RS3-Red.jpg" alt="">
+      <img src="AUDI img/RS3-Gry.jpg" alt="">
+      <img src="AUDI img/RS3-Green.jpg" alt="">
+    </div>
+    <button class="carousel-button next1"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="carousel-dots1"></div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About Audi</h3>
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Sustainability</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Get Help</h3>
+            <ul>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Payment Options</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Find A Store</a></li>
+                <li><a href="#">Sign Up for Email</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/raouf_____kl/?hl=ar"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Audi, Inc. All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">CA Supply Chains Act</a>
+        </div>
+    </div>
+</footer>
+
+
+
+          
+
+
+             </div>
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+    // Initialize all carousels with class 'carousel1'
+    document.querySelectorAll('.carousel1').forEach(carousel => {
+        initializeCarousel(carousel);
+    });
+});
+
+function initializeCarousel(carousel) {
+    const track = carousel.querySelector('.carousel-track1');
+    const slides = track.querySelectorAll('img');
+    const dotsContainer = carousel.querySelector('.carousel-dots1');
+    const prevButton = carousel.querySelector('.prev1');
+    const nextButton = carousel.querySelector('.next1');
+    
+    let currentIndex = 0;
+    let interval;
+
+    // Create dots for this carousel
+    slides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll('.dot');
+
+    function updateDots() {
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    function goToSlide(index) {
+        currentIndex = index;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        updateDots();
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        goToSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        goToSlide(currentIndex);
+    }
+
+    function startAutoSlide() {
+        stopAutoSlide(); // Clear any existing interval
+        interval = setInterval(nextSlide, 2000);
+    }
+
+    function stopAutoSlide() {
+        if (interval) {
+            clearInterval(interval);
+        }
+    }
+
+    // Event listeners for this carousel
+    prevButton.addEventListener('click', () => {
+        prevSlide();
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    nextButton.addEventListener('click', () => {
+        nextSlide();
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    // Hover events for this carousel
+    track.addEventListener('mouseenter', stopAutoSlide);
+    track.addEventListener('mouseleave', startAutoSlide);
+
+    // Start autoplay
+    startAutoSlide();
+}</script>
+
+
+
+        <script>
+  const video = document.getElementById('myVideo');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.5 }); // Video must be at least 50% visible
+
+  observer.observe(video);
+
+</script>
+
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const switchToggle = document.querySelector('.switch input[type="checkbox"]');
+    
+    // Check for saved theme preference, or use system preference
+    const currentTheme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    
+    // Apply saved theme on load
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        switchToggle.checked = true;
+    }
+
+    // Toggle theme when switch is clicked
+    switchToggle.addEventListener('change', function() {
+        if (this.checked) {
+            document.body.classList.add('dark-theme');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-theme');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+
+</script>
+
+
+        
+
+    
+
+    
+    
+    
+</body>
+</html>
